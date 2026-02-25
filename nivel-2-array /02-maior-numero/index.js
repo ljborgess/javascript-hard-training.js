@@ -18,4 +18,3 @@ function maiorNumArray(arr){
     return maior
 }
 console.log(maiorNumArray([3,5,1,123,4,1,3,4,123,44]))
- 

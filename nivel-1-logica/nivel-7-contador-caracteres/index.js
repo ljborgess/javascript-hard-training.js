@@ -11,6 +11,9 @@ function contador(texto){
     
     //(inicialização , condição , atualização
     for( let i = 0 ; i <= texto.length;i++){
+        const caractere = textoFormatado[i]
+        total++;
+        
 
     }
 }
