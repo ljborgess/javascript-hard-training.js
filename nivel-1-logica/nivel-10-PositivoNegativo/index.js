@@ -4,7 +4,6 @@ function verificar(numero){
     }else {
         console.log("Este numero é Negativo")
     }
-    
 }
 
 console.log(verificar(1))
