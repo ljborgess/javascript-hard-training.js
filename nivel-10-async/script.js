@@ -7,7 +7,7 @@ function esperar3Segundos(){
                 return({message: 'Error message'});
             }
             console.log('Esperando 3 segundos');
-            resolve("passaram")
+            resolve("passaram 3 segundos")
         },3000 )
     })
 }
