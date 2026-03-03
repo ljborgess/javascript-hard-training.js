@@ -10,8 +10,14 @@ function estatisticas(arr){
     const menor = arr.reduce((acc, n) =>
         n < acc ? n : acc
     )
-
-    return { maior, menor }
+    const soma = arr.reduce((acc,n)=> 
+        acc += n ? n : acc 
+    )
+    const multiplicacao = arr.reduce((acc,n)=> 
+         acc + n * 2  
+    )
+    return { maior, menor ,soma, multiplicacao }
+    
 }
 
 console.log(estatisticas([10, 5, 20, 8]))
