@@ -1,0 +1,17 @@
+function estatisticas(arr){
+    if(arr.length === 0){
+        throw new Error("Array vazio")
+    }
+
+    const maior = arr.reduce((acc, n) =>
+        n > acc ? n : acc
+    )
+
+    const menor = arr.reduce((acc, n) =>
+        n < acc ? n : acc
+    )
+
+    return { maior, menor }
+}
+
+console.log(estatisticas([10, 5, 20, 8]))
