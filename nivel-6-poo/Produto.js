@@ -13,6 +13,6 @@ class Produto{
     
     }
     aplicarDesconto(){
-        this.preco -= this.preco*(porcentual/100)
+        this.#preco -= this.#preco*(porcentual/100)
     }
 }

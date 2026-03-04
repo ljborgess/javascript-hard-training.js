@@ -6,19 +6,14 @@ const pedidos = [
   { id: 5, cliente: "Carlos", total: 2000, status: "pago" }
 ]
 
+function filtrar(pedidos) {
 
-function filtrar(pedidos){
-    if(!Array.isArray(pedidos)){
-        throw new Error("O Paramêtro precisa ser uma lista")
-    }   return pedidos.filter(palavra => palavra.status === "pago")
+    if (!Array.isArray(pedidos)) {
+        throw new Error("O parâmetro precisa ser uma lista")
+    }
 
-    const pedidosPagos = filtrar(pedidos)
-    console.log(pedidosPagos)
-
-
-
-
-
-
+    return pedidos.filter(pedido => pedido.status === "pago")
 }
 
+const pedidosPagos = filtrar(pedidos)
+console.log(pedidosPagos)
