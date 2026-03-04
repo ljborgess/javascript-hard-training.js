@@ -7,7 +7,7 @@ function estatisticas(arr){
         n > acc ? n : acc
     )
 
-    const menor = arr.reduce((acc, n) =>
+    const menor = arr.reduce((acc, n) => // acc nesse caso sempre vai ser o anterior , e o N é o que anda para frente 
         n < acc ? n : acc
     )
     const soma = arr.reduce((acc,n)=> 
