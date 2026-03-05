@@ -6,17 +6,15 @@ const pedidos = [
   { id: 5, cliente: "João", total: 100, status: "pendente" }
 ];
 
-const agrupados = pedidos
-                const resultado = pedidos.reduce((acc, pedido) => {
+const resultado = pedidos.reduce((acc, pedido) => {
 
-  if (!acc[pedido.status]) {
-    acc[pedido.status] = 0
-  }
-
-  acc[pedido.status] += 1
-
-  return acc
-
-}, {})
+if (!acc[pedido.cliente]) {             
+    acc[pedido.cliente] = "n"
+}
+  //{'CLiente' = 0} criando os paramentros dentro dee uma caixa vazia 
+    
+    acc[pedido.cliente] = acc[pedido.cliente] + pedido.total
+    return acc 
+},{})
 
 console.log(resultado)
