@@ -26,6 +26,25 @@ console.log(menorNum(menor))
 // ========================================
 // TODO: Use reduce() para contar quantas vezes cada elemento aparece
 // Ex: [a, b, a, c, b, a] deve retornar {a: 3, b: 2, c: 1}
+const listas = ['a', 'b', 'a', 'c', 'b', 'a'] 
+
+function reduzir(arr){
+    if(!Array.isArray(arr)){
+        throw new Error("Precisa ser uma array")
+    }
+    return  arr.reduce((acc, y) => {
+        if(!acc[y]){
+            acc[y] = 0
+        }
+
+        acc[y]++   // soma a ocorrência
+
+        return acc // retorna o acumulador
+    }, {})  
+            
+}
+
+console.log(reduzir(listas))
 
 // ========================================
 // EXERCÍCIO 3: Reduzir arrays aninhados
@@ -39,6 +58,26 @@ console.log(menorNum(menor))
 // ========================================
 // TODO: Use reduce() para agrupar números por se são pares/ímpares
 // Ex: [1, 2, 3, 4, 5, 6] deve retornar {pares: [2, 4, 6], impares: [1, 3, 5]}
+const numbers = [1, 2, 3, 4, 5, 6]
+
+function splite(arr){
+    if(!Array.isArray(arr)){
+        throw new Error("Its need to be a Array")
+    }
+    return arr.reduce((acc, y) => {
+
+        if(y % 2 === 0){
+            acc.pares.push(y)
+        }else{
+            acc.impares.push(y)
+        }
+
+        return acc
+
+    }, {pares: [], impares: []})
+}
+
+console.log(splite(numbers))
 
 // ========================================
 // EXERCÍCIO 5: Reduce com estrutura complexa
