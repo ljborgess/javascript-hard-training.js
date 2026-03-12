@@ -75,16 +75,13 @@ Person.depositar(1550)
 Person.sacar(1000)
 Person.saldoAtual()
 
-
-
-
-
-
 // ========================================
 // EXERCÍCIO 3: Clonar objeto
 // ========================================
 // TODO: Crie uma função que clona um objeto profundamente
 // TODO: Implemente de forma rasa (shallow) e profunda (deep)
+
+
 
 // ========================================
 // EXERCÍCIO 4: Mesclagem de objetos
