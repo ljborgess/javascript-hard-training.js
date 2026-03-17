@@ -66,10 +66,8 @@ console.log(pedidosAcumulados(pedidos))
 // Entrada: [{ cliente, esperado: 500, real: 450 }]
 // Saída: { cliente, diferenca: -50, percentual: -10% }
 
-function detectarDiscrepancias(pedidos) {
-  // TODO: compare esperado vs real
-}
-
+function detectarDiscrepancias(pedidos) {}
+  // TODO: compare esperado vs rea
 // console.log(somasPorCliente([...]));
 // console.log(pedidosAcumulados([...]));
 // console.log(detectarDiscrepancias([...]));
